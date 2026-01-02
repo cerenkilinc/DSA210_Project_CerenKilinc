@@ -1,22 +1,37 @@
 # The Relationship Between Social Well-Being and Crime:  Analysis of Happiness, Education, and Health Indicators for Turkey
 
 ## Introduction
-This project investigates how social and economic well-being factors such as happiness, education, and life expectancy influence crime perception for Turkey. Using  data from Kaggle and the World Bank, it analyzes whether higher education levels, longer life expectancy, and greater happiness contribute to safer socities. The goal is to uncover which social indicators best explain the crime rate.
+This project investigates how social and economic well-being factors such as happiness, education, and life expectancy influence crime perception for Turkey. Using  data from Kaggle and the World Bank, it analyzes whether higher education levels, longer life expectancy, and greater happiness contribute to safer socities.The goal is to uncover which social indicators best explain the crime rate.
 
 ---
 ## Motivation / Problem Definition
-Crime is not only a legal concern but also a reflection of a nation’s social and economic conditions. In Turkey, social factors such as education, health, and overall happiness can influence how safe people feel in their communities. This project aims to explore how these key well-being indicators education rate, life expectancy, and happiness level relate to the country’s crime perception in 2022. By focusing on Turkey, the study seeks to provide a clear snapshot of how social development and quality of life correspond with perceived safety within a single national context.
+Crime is not only a legal concern but also a reflection of a nation’s social and economic conditions. In Turkey, social factors such as education, health, and overall happiness can influence how safe people feel in their communities.The study first examines worldwide relationships between social indicators and crime perception for the year 2022. Turkey is then analyzed as a case and compared against these global patterns  By focusing on Turkey, the study seeks to provide a clear snapshot of how social development and quality of life correspond with perceived safety within a single national context.
 
 ---
 ## Research Questions / Hypotheses
+Hypotheses were evaluated using global correlation analysis (Pearson and Spearman) and residual analysis based on linear regression models. Residuals were used to assess whether Turkey performs better or worse than expected given global relationships.
+
+
 1- To what extent does a higher education rate contribute to a reduction in crime perception for Turkey?
+
+- H₀ (Null hypothesis): Given the global relationship between education and crime perception, Turkey’s observed crime index is not lower than the value predicted by its education level.
+- H₁ (Alternative hypothesis): Given the global relationship between education and crime perception, Turkey’s observed crime index is lower than the value predicted by its education level.
 
 2- Is there a significant negative relationship between happiness levels and the crime index?
 
+- H₀ (Null Hypothesis) Given the global relationship between happiness and crime perception, Turkey’s observed crime index is not lower than the value predicted by its happiness level.
+- H₁ (Alternative Hypothesis) Given the global relationship between happiness and crime perception, Turkey’s observed crime index is lower than the value predicted by its happiness level.
+  
 3- How does life expectancy, as an indicator of overall health and social well-being, influence crime levels?
+
+- H₀ (Null Hypothesis) Given the global relationship between life expectancy and crime perception, Turkey’s observed crime index is not lower than the value predicted by its life expectancy level.
+- H₁ (Alternative Hypothesis) Given the global relationship between life expectancy and crime perception, Turkey’s observed crime index is lower than the value predicted by its life expectancy level.
 
 4- Among the key social indicators happiness, education, and health  which exerts the strongest impact on reducing crime for Turkey?
 
+- H₀ (Null Hypothesis) There is no difference in the impact of happiness, education, and life expectancy on crime perception for Turkey.
+
+- H₁ (Alternative Hypothesis) At least one social indicator (happiness, education, or life expectancy) exerts a stronger impact on reducing crime perception for Turkey than the others.
 ---
 ## Data Sources
 **The datas have been used:**  
