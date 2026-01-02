@@ -68,7 +68,7 @@ The datas are for 2022 and the other years will be not be taken into account. . 
 ## Analysis Plan
 
 ### Statistical Analysis:
- - Conduct correlation and regression analyses to measure how happiness, education rate, and life expectancy influence the crime index within Turkey. Use statistical tests such as Pearson correlation and multiple linear regression to identify significant relationships among the variables for the year 2022.
+ - Correlation analysis (Pearson and Spearman) and linear regression models were used to assess the global relationship between social well-being indicators and crime perception. Hypotheses were evaluated using both correlation significance and residual analysis from regression models to determine whether Turkey performs better or worse than expected given global patterns.
 
 ### Comparative Analysis:
  - To examine the relative strength of each social indicator’s impact on crime perception in Turkey, education, happiness, and life expectancy were compared in terms of their association with the Crime Index.
@@ -87,6 +87,39 @@ Use scatter plots and regression lines to illustrate the relationships between v
   - To examine Turkey’s relative position in a global context, histograms of the Crime Index, Happiness Score, Education Rate, and Life Expectancy for the year 2022 were constructed using data from all available countries. Turkey’s observed value for each indicator was highlighted with a red dashed vertical line.
   #### HEAT MAP : 
   -  This correlation heatmap summarizes correlation coefficients between happiness, education, life expectancy, and crime score for the year 2022. The values range from −1 to +1, where negative values indicate negative relationships and positive values indicate direct relationships.
+
+---
+## Machine Leaning Methods
+
+Supervised machine learning techniques were applied to analyze the relationship between social well-being indicators and crime perception. The objective was to evaluate how happiness, education, and life expectancy can be used to predict the Crime Index and to compare the relative performance of different regression models.
+
+### Linear Regression
+  - Used as a baseline model to understand the linear relationship between social indicators and crime perception.
+  - The model showed limited predictive performance, indicating that crime perception cannot be explained well by a simple linear relationship.
+  - Served as a reference point for comparing more complex models.
+
+### k-Nearest Neighbors (kNN) Regression
+
+  - Applied to capture local and non-linear patterns in the data.
+  - Feature scaling was performed before training due to the distance-based nature of kNN.
+  - The model did not significantly improve prediction accuracy compared to Linear Regression, suggesting that nearby countries with similar indicators do not always share similar crime perception levels.
+
+### Decision Tree Regression
+  - Used to model non-linear relationships through rule-based splits.
+  - A shallow tree was selected to reduce overfitting.
+  - The results showed slight improvements in interpretability but limited gains in prediction accuracy.
+
+### Results
+- None of the models achieved high predictive accuracy, which is expected due to the subjective and complex nature of crime perception.
+- the models provided more explanatory insights than precise predictions.
+- The analysis highlights, social well-being indicators alone are insufficient to fully predict crime perception.
+- The trained Linear Regression model was used to predict Turkey’s Crime Index based on its happiness, education, and life expectancy values.
+- The negative residual indicates that Turkey’s actual crime perception is significantly lower than what the model predicts based on its social well-being indicators.
+- This result suggests that Turkey performs better than expected in terms of crime perception when compared to countries with similar social indicator levels.
+
+
+
+
 
 ---
 ## Expected Outcomes / Deliverables
