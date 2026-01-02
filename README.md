@@ -73,9 +73,10 @@ The datas are for 2022 and the other years will be not be taken into account. Gl
 ### Comparative Analysis:
  - To examine the relative strength of each social indicator’s impact on crime perception in Turkey, education, happiness, and life expectancy were compared in terms of their association with the Crime Index.
  -  Since the analysis focuses on a single country and a single year, ratio-based indicators were constructed by dividing each social indicator by Turkey’s Crime Index. This approach allows social well-being measures to be evaluated relative to perceived crime levels, rather than based solely on their absolute values.
-#### Education per Crime (3.20): Education appears strong relative to Turkey’s crime perception level.
-#### Life Expectancy per Crime (2.42): Health outcomes are also relatively strong compared to perceived crime.
-#### Happiness per Crime (0.15): Happiness remains relatively low despite low crime perception.
+
+- **Education per Crime (3.20):** Education appears strong relative to Turkey’s crime perception level.
+- **Life Expectancy per Crime (2.42):** Health outcomes are also relatively strong compared to perceived crime.
+- **Happiness per Crime (0.15):**  Happiness remains relatively low despite low crime perception.
 
 
 ### Visualization: 
@@ -112,7 +113,7 @@ Supervised machine learning techniques were applied to analyze the relationship 
 ### Results
 - None of the models achieved high predictive accuracy, which is expected due to the subjective and complex nature of crime perception.
 - the models provided more explanatory insights than precise predictions.
-- The analysis highlights, social well-being indicators alone are insufficient to fully predict crime perception.
+- The analysis highlights that social well-being indicators alone are insufficient to fully predict crime perception.
 - The trained Linear Regression model was used to predict Turkey’s Crime Index based on its happiness, education, and life expectancy values.
 - The negative residual indicates that Turkey’s actual crime perception is significantly lower than what the model predicts based on its social well-being indicators.
 - This result suggests that Turkey performs better than expected in terms of crime perception when compared to countries with similar social indicator levels.
