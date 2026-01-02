@@ -35,7 +35,7 @@ Hypotheses were evaluated using global correlation analysis (Pearson and Spearma
 ---
 ## Data Sources
 **The datas have been used:**  
-The datas are for 2022 and the other years will be not be taken into account. Only the Country : Turkey datas will be used for the analysis
+The datas are for 2022 and the other years will be not be taken into account. . Global country-level data are used to estimate overall statistical relationships, while Turkey is examined as a focal country for detailed interpretation.
 ### 1.World Crime Index:
  - Provides global estimates of perceived crime and safety levels based on public surveys. It measures how safe people feel in their countries rather than official crime rates, making it suitable for cross-country comparisons.
  - https://www.kaggle.com/datasets/ahmadjalalmasood123/world-crime-index?select=World+Crime+Index+.csv
@@ -57,13 +57,11 @@ The datas are for 2022 and the other years will be not be taken into account. On
  - Datasets are obtained from Kaggle and the World Bank, including global indicators for happiness, education, life expectancy, and crime levels. All files are downloaded in CSV format and imported into Python for processing.
 
 ### Data Cleaning:
-- The countries are removed only the Turkey's will be used and irrelevant columns are removed to maintain analytical clarity.
-
+- Missing numerical values were handled using mean imputation. For all the data sets the writing style of 'Turkey' made is standarize to one writing style
 ### Data Integration:
-- The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. Only Turkey data are retained for analysis.
-
+- The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. 
 ### Feature Engineering:
- -  Since the dataset represents a single year (2022) rather than a time series, normalization could reduce the visibility of real differences between variables. Therefore, each indicator — such as happiness score, education rate, life expectancy, and crime index — will be presented in its original range to more accurately illustrate their relationships.Additionaly derived metrics such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. 
+ -  Since the dataset represents a single year (2022) rather than a time series, normalization could reduce the visibility of real differences between variables. Therefore, each indicator — such as happiness score, education rate, life expectancy, and crime index — will be presented in its original range to more accurately illustrate their relationships.Additionaly derived metrics such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. In addition Z-score standardization was applied to compare Turkey’s position relative to the global distribution.
 
 
 ---
@@ -73,11 +71,22 @@ The datas are for 2022 and the other years will be not be taken into account. On
  - Conduct correlation and regression analyses to measure how happiness, education rate, and life expectancy influence the crime index within Turkey. Use statistical tests such as Pearson correlation and multiple linear regression to identify significant relationships among the variables for the year 2022.
 
 ### Comparative Analysis:
- - Examine the relative strength of each variable’s impact on crime perception. Compare how education, health, and happiness differ in their association with the crime index to determine which factor contributes most to safety perception in Turkey.
+ - To examine the relative strength of each social indicator’s impact on crime perception in Turkey, education, happiness, and life expectancy were compared in terms of their association with the Crime Index.
+ -  Since the analysis focuses on a single country and a single year, ratio-based indicators were constructed by dividing each social indicator by Turkey’s Crime Index. This approach allows social well-being measures to be evaluated relative to perceived crime levels, rather than based solely on their absolute values.
+#### Education per Crime (3.20): Education appears strong relative to Turkey’s crime perception level.
+#### Life Expectancy per Crime (2.42): Health outcomes are also relatively strong compared to perceived crime.
+#### Happiness per Crime (0.15): Happiness remains relatively low despite low crime perception.
 
-### Visualization:
- - Use scatter plots and regression lines to illustrate the relationships between variables, highlighting how changes in happiness, education rate, and life expectancy correspond to variations in the crime index. Bar charts and correlation heatmaps will also be used to clearly present these relationships for Turkey in 2022.
 
+### Visualization: 
+Use scatter plots and regression lines to illustrate the relationships between variables, highlighting how changes in happiness, education rate, and life expectancy correspond to variations in the crime index. Bar charts and correlation heatmaps will also be used to clearly present these relationships for Turkey in 2022.
+   #### Scater plot and linear Regression :
+   - The scatter plot displays the distribution of countries based on their happiness scores / Life Expectacy / Education score and crime index values. The regression line represents the global linear relationship between happiness / Life Expectacy / Education score and crime perception.
+   - Turkey is highlighted with a larger marker for direct comparison with the global pattern.
+  #### Histogram :
+  - To examine Turkey’s relative position in a global context, histograms of the Crime Index, Happiness Score, Education Rate, and Life Expectancy for the year 2022 were constructed using data from all available countries. Turkey’s observed value for each indicator was highlighted with a red dashed vertical line.
+  #### HEAT MAP : 
+  -  This correlation heatmap summarizes correlation coefficients between happiness, education, life expectancy, and crime score for the year 2022. The values range from −1 to +1, where negative values indicate negative relationships and positive values indicate direct relationships.
 
 ---
 ## Expected Outcomes / Deliverables
