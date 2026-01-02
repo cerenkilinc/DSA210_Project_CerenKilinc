@@ -35,7 +35,7 @@ Hypotheses were evaluated using global correlation analysis (Pearson and Spearma
 ---
 ## Data Sources
 **The datas have been used:**  
-The datas are for 2022 and the other years will be not be taken into account. . Global country-level data are used to estimate overall statistical relationships, while Turkey is examined as a focal country for detailed interpretation.
+The datas are for 2022 and the other years will be not be taken into account. Global country-level data are used to estimate overall statistical relationships, while Turkey is examined as a focal country for detailed interpretation.
 ### 1.World Crime Index:
  - Provides global estimates of perceived crime and safety levels based on public surveys. It measures how safe people feel in their countries rather than official crime rates, making it suitable for cross-country comparisons.
  - https://www.kaggle.com/datasets/ahmadjalalmasood123/world-crime-index?select=World+Crime+Index+.csv
@@ -61,7 +61,7 @@ The datas are for 2022 and the other years will be not be taken into account. . 
 ### Data Integration:
 - The datasets are merged using the common variable Country, forming a unified dataset containing social and economic indicators alongside crime perception scores. 
 ### Feature Engineering:
- -  Since the dataset represents a single year (2022) rather than a time series, normalization could reduce the visibility of real differences between variables. Therefore, each indicator — such as happiness score, education rate, life expectancy, and crime index — will be presented in its original range to more accurately illustrate their relationships.Additionaly derived metrics such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. In addition Z-score standardization was applied to compare Turkey’s position relative to the global distribution.
+ -  Since the dataset represents a single year (2022) rather than a time series, normalization could reduce the visibility of real differences between variables. Therefore, each indicator such as happiness score, education rate, life expectancy, and crime index will be presented in its original range to more accurately illustrate their relationships.Additionaly derived metrics such as the education-to-crime ratio and happiness-to-crime ratio, will be generated to capture the relative impact of social well-being on crime levels. In addition Z-score standardization was applied to compare Turkey’s position relative to the global distribution.
 
 
 ---
@@ -122,19 +122,25 @@ Supervised machine learning techniques were applied to analyze the relationship 
 
 
 ---
-## Expected Outcomes / Deliverables
+## Outcomes / Deliverables
 
-This project aims to provide data-driven insights into how social well-being indicators happiness, education, and health influence global crime perception in Turkey.
+This project provides data-driven insights into how social well-being indicators—happiness, education, and health—are associated with crime perception in Turkey within a global context.
 
-**Expected findings include:** 
+**The main findings of the analysis include:** 
 
- - Quantified correlations showing that higher education and happiness levels in Turkey are linked to lower crime indices.
- - Statistical evidence that life expectancy  also contributes to reduced crime perception.
- -  Visual results illustrating how changes in happiness, education rate, and life expectancy relate to variations in the crime index within Turkey.
- -  Regression-based conclusions identifying education and happiness as the strongest predictors of safety, revealing how social progress can reduce perceived crime in Turkey
+- Correlation and regression analyses indicate that higher education levels are associated with lower crime perception globally, and Turkey’s observed crime index is lower than predicted given its education level.
+- Happiness exhibits a negative relationship with crime perception; however, its relative impact is weaker compared to education and health indicators in the case of Turkey.
+- Life expectancy also shows a statistically significant negative association with crime perception, suggesting that better health outcomes are linked to improved safety perception.
+- Visual analyses, including scatter plots, distributions, and z-score comparisons, demonstrate that Turkey performs better than the global average in terms of crime perception despite moderate happiness levels.
+- Regression-based and standardized coefficient comparisons reveal that education and life expectancy exert stronger effects on reducing crime perception than happiness.
+Overall, the results suggest that structural social factors such as education and health play a more influential role than subjective well-being in shaping crime perception in Turkey.
+
+---
 
 ## Limitations
-This study focuses only on Turkey and uses data from a single year (2022), which limits the ability to observe trends or changes over time. Additionally, the variables are based on perception-based indices such as the Crime Index and Happiness Score, which may include subjective bias. Data availability from different sources might also introduce slight inconsistencies in measurement or reporting.
+This study uses data from a single year (2022), which limits the ability to observe trends over time. Additionally, the variables are based on perception-based indices such as the Crime Index and Happiness Score, which may include subjective bias. Data availability from different sources might also introduce slight inconsistencies in measurement or reporting.
+
+---
 
 ## Future Work
-Future extensions of this study could involve expanding the dataset to include multiple years to observe temporal trends in the relationship between social indicators and crime perception. Cross-country comparisons could also provide a broader understanding of cultural and economic effects on crime perception. Additionally, integrating more complex analytical models or machine learning approaches could enhance prediction accuracy and uncover deeper insights into how education, health, and happiness contribute to safety and social stability.
+Future research could extend the analysis to multiple years to examine temporal trends and structural changes. Cross-country comparative studies could further contextualize Turkey’s position. Incorporating additional socioeconomic variables and more advanced machine learning or causal inference methods may improve explanatory depth and predictive performance.
