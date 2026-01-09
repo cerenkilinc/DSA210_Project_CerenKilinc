@@ -92,7 +92,8 @@ Use scatter plots and regression lines to illustrate the relationships between v
 ---
 ## Machine Leaning Methods
 
-Supervised machine learning techniques were applied to analyze the relationship between social well-being indicators and crime perception. The objective was to evaluate how happiness, education, and life expectancy can be used to predict the Crime Index and to compare the relative performance of different regression models.
+Supervised machine learning techniques were applied to examine the explanatory role of social well-being indicators on crime perception rather than to achieve high prediction accuracy. Since crime perception is influenced by many unobserved social, cultural, and institutional factors, the models were used to understand how happiness, education, and life expectancy relate to the Crime Index and to assess their relative importance. Therefore, the comparison of different regression models focuses on interpretability and consistency of results rather than predictive performance.
+
 
 ### Linear Regression
   - Used as a baseline model to understand the linear relationship between social indicators and crime perception.
